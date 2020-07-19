@@ -16,6 +16,7 @@
 		8489753824C4676000DCD233 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489753724C4676000DCD233 /* Constants.swift */; };
 		8489753A24C46A2700DCD233 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489753924C46A2700DCD233 /* Video.swift */; };
 		8489753C24C46B1100DCD233 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489753B24C46B1100DCD233 /* Model.swift */; };
+		8489753E24C48E9600DCD233 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489753D24C48E9600DCD233 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8489753724C4676000DCD233 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8489753924C46A2700DCD233 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8489753B24C46B1100DCD233 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8489753D24C48E9600DCD233 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				8489753724C4676000DCD233 /* Constants.swift */,
 				8489753924C46A2700DCD233 /* Video.swift */,
 				8489753B24C46B1100DCD233 /* Model.swift */,
+				8489753D24C48E9600DCD233 /* Response.swift */,
 			);
 			path = "Youtube-build";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				8489753C24C46B1100DCD233 /* Model.swift in Sources */,
 				8489753824C4676000DCD233 /* Constants.swift in Sources */,
 				8489753A24C46A2700DCD233 /* Video.swift in Sources */,
+				8489753E24C48E9600DCD233 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
