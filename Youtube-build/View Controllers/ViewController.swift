@@ -24,6 +24,18 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         model.getVideos()
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        let selectedVideo = self.videos[tableView.indexPathForSelectedRow!.row]
+        let detailVC = segue.destination as! DetailViewController
+        detailVC.video = selectedVideo
+        
+    }
+    
     func videosFetched(_ videos: [Video]) {
         
         self.videos = videos
@@ -33,16 +45,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
     }
     
+    
+    
     // MARK : - TableView Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.videos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_CELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_CELL_ID, for: indexPath) as! VideoTableViewCell
         
-        let title = self.videos[indexPath.row].title
-        cell.textLabel?.text = title
+        let video = self.videos[indexPath.row]
+        
+        cell.setCell(video)
+        
+        
+        
+        
         return cell
     }
     
